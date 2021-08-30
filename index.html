@@ -1,16 +1,28 @@
+<head>
+    <title>emt egg tai jotai</title>
+
+</head>
+
+<body>
 koirat ei ole kissoja
 
 
-<button type="button" onclick="klikkaus()" >Klikkaa mua</button>
 <h1>koirat</h1>
+<img onclick="Klikkaus()" src="egg.jpg" id="egg" width="500"
+<p>koirat on <p id="numero"> </p> kertaa tyhmempiä kuin kissat</p>
+
 <script>
+
     let klikkaukset = 0;
+
     function Klikkaus(){
-    klikkaukset++;
-        if(klikkaukset > 50){
-            alert("lopeta")
+
+        klikkaukset++
+        document.getElementById("numero").innerHTML = klikkaukset
+
+        if(klikkaukset > 10){
+            document.getElementById("egg").src = "egg2.jpg"
+            alert("LOPETA")
         }    
     }    
-     
-    
 </script>    
