@@ -11,20 +11,21 @@
 
 <img onclick="Klikkaus()"src="egg.JPG" id="egg" width="500">
 
-<p>egg on <p id="numero"> </p> kertaa tyhmempiä kuin minä</p>
+<p>egg on <p id="numero"> 0 </p> kertaa tyhmempiä kuin minä</p>
 
-<script>
+    <script>
 
-    let klikkaukset = 0;
+        let klikkaukset = 0;
 //kommentti
-    function Klikkaus(){
+        function Klikkaus(){
 
-        klikkaukset++
-        document.getElementById("numero").innerHTML = klikkaukset
+            klikkaukset++
+            document.getElementById("numero").innerHTML = klikkaukset
 
-        if(klikkaukset > 10){
-            document.getElementById("egg").src = "egg2.JPG"
-            alert("LOPETA")
+            if(klikkaukset > 10){
+                document.getElementById("egg").src = "egg2.JPG"
+                alert("LOPETA")
+            }    
         }    
-    }    
-</script>    
+    </script>
+</body>
